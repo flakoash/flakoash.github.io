@@ -3212,7 +3212,8 @@ table.alt tbody tr td {
 #header.alt .logo img {
   display: block;
   margin: 0 auto;
-  max-width: 75%;
+  width: 200px;
+  max-width: 40%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -3879,11 +3880,16 @@ body.is-preload #header.alt .logo {
 }
 
 .card {
+  transition: box-shadow 0.3s;
   margin: 10px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }
 
 .card-header img {
